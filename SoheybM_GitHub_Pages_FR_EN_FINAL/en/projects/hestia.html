@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Hestia | Soheyb Mebarbeche</title><link href="../../styles.css" rel="stylesheet"/><style>.article{max-width:860px;margin:70px auto 110px;padding:0 22px;color:#dce7ec;line-height:1.85}.article h1{font:600 clamp(34px,5vw,56px) 'Space Grotesk',sans-serif;color:white;line-height:1.15}.article h2{font:600 27px 'Space Grotesk',sans-serif;color:white;margin-top:36px}.article a{color:#9eead1;text-decoration:underline}.article ul{padding-left:25px}.article strong{color:white}.article code{background:#203447;padding:3px 5px;border-radius:4px}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin:30px 0}.gallery img{width:100%;height:230px;object-fit:cover;border-radius:9px;border:1px solid #46566a}.source-label{font-size:12px;opacity:.7}.back{display:inline-block;margin-bottom:22px}</style></head><body><header class="nav"><a class="brand" href="../index.html">SM<span class="dot">.</span></a><nav><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></nav><div aria-label="Choix de la langue / Language" class="lang-switch" role="group"><a class="inactive" href="../../projects/hestia.html" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="active" href="#" hreflang="en" lang="en">EN</a></div></header><main class="article"><a class="back" href="../index.html#projects">← All projects</a><h1>Hestia — Connected Door Sensor</h1>
+<p><strong>Fourth-year Industrial Systems &amp; Robotics project | Polytech Lyon</strong></p>
+<h2>Objective</h2>
+<p>Build and validate a connected prototype that detects a magnetic state near a door and displays it in a home-automation interface. The concept demonstrates a working sensing-to-dashboard chain, <strong>not a certified mechanical lock-status detector</strong>.</p>
+<h2>System</h2>
+<ul>
+<li>ESP32-H2 DevKitM-1 reads a reed switch at GPIO3 and drives an onboard status LED.</li>
+<li>Zigbee sends the ON/OFF state to Home Assistant, hosted on a Raspberry Pi 3 Model B with a Sonoff Zigbee coordinator.</li>
+<li>A Home Assistant template entity presents a readable interpreted status.</li>
+<li>A rechargeable LiPo battery, TP/TC4056 charge module and MT3608 boost converter power the prototype.</li>
+<li>An initial CAD enclosure explores packaging the electronics.</li>
+</ul>
+<h2>Implementation and testing</h2>
+<p>The team adapted an ESP-IDF <code>HA_on_off_light</code> Zigbee example, originally modeled as a lamp, to reflect the reed-switch state. The prototype was paired through ZHA, integrated into Home Assistant, and validated for sensor reading, Zigbee updates, LED behavior and battery-powered operation. Early power-supply testing exposed a voltage-drop issue, resolved by replacing the charging module.</p>
+<h2>Limitations</h2>
+<p>The reed switch detects magnet proximity, <strong>not whether a lock bolt is mechanically engaged</strong>. Further work would require better mechanical sensing, an appropriate Zigbee contact-device profile, battery monitoring, power measurements and enclosure refinement.</p>
+<h2>People and resources</h2>
+<p><strong>Project authors:</strong> Soheyb Mebarbeche and Nicolas Ogliastri Alfonso. No course supervisors are credited here at the user's request.<br/>
+<strong>Technical basis:</strong> ESP-IDF Zigbee sample, Home Assistant / ZHA, ESP32-H2 and component documentation. Adapted open-source examples must remain attributed in any subsequent code publication.</p>
+<p><strong>Source:</strong> <em>Projet Hestia — Capteur de porte connecté</em>, project report, Polytech Lyon (4A SIR), nine pages. A demonstration video is mentioned in the report but has not been supplied for publication.</p>
+<div class="gallery"><img alt="ESP32 and related components used in Hestia" src="../../assets/hestia-electronics.jpg"/></div><hr/><p class="source-label">Professional project summary. Authors, collaborators and institutions are credited in the text. Code and third-party assets remain with their owners.</p></main></body></html>

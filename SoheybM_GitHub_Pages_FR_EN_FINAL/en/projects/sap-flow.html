@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Sap Flow | Soheyb Mebarbeche</title><link href="../../styles.css" rel="stylesheet"/><style>.article{max-width:860px;margin:70px auto 110px;padding:0 22px;color:#dce7ec;line-height:1.85}.article h1{font:600 clamp(34px,5vw,56px) 'Space Grotesk',sans-serif;color:white;line-height:1.15}.article h2{font:600 27px 'Space Grotesk',sans-serif;color:white;margin-top:36px}.article a{color:#9eead1;text-decoration:underline}.article ul{padding-left:25px}.article strong{color:white}.article code{background:#203447;padding:3px 5px;border-radius:4px}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin:30px 0}.gallery img{width:100%;height:230px;object-fit:cover;border-radius:9px;border:1px solid #46566a}.source-label{font-size:12px;opacity:.7}.back{display:inline-block;margin-bottom:22px}</style></head><body><header class="nav"><a class="brand" href="../index.html">SM<span class="dot">.</span></a><nav><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></nav><div aria-label="Choix de la langue / Language" class="lang-switch" role="group"><a class="inactive" href="../../projects/sap-flow.html" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="active" href="#" hreflang="en" lang="en">EN</a></div></header><main class="article"><a class="back" href="../index.html#projects">← All projects</a><h1>Autonomous Sap-Flow Measurement System</h1>
+<p><strong>Fourth-year engineering internship | Laboratoire Ampère, in collaboration with CETHIL | 2025–2026</strong></p>
+<h2>Context and objective</h2>
+<p>This research instrument measures temperature changes around a controlled heat pulse to support sap-flow studies in trees. The prototype combines an analog sensing board, digital control board and autonomous measurement cycle. The internship focused on improving firmware reliability, data acquisition, low-power operation and field readiness of an <strong>existing research project</strong>, not developing the complete instrument from scratch.</p>
+<h2>My contributions</h2>
+<ul>
+<li>Reorganized and substantially redeveloped the application-level <strong>PIC24 embedded firmware</strong>, building on existing low-level peripheral components and earlier prototypes.</li>
+<li>Integrated a repeatable sequence of acquisition, heating, buffered data logging to microSD, RTC-driven sleep and wake-up.</li>
+<li>Developed a <strong>BLE mobile interface</strong> using MIT App Inventor for device startup, clock synchronization, live lab diagnostics and concise field checks.</li>
+<li>Investigated interference between microSD and AD7799 ADC operations on the shared SPI bus; introduced separate configurations for acquisition and SD operations, with the solution proposed during technical supervision.</li>
+<li>Fixed heating-timing variability by using a dedicated timer; investigated battery measurement and power-regulator issues.</li>
+<li>Iterated a prototype enclosure in FreeCAD and participated in lab calibration and field validation.</li>
+</ul>
+<h2>Technical architecture</h2>
+<ul>
+<li><strong>MCU:</strong> Microchip PIC24FJ1024GB606</li>
+<li><strong>Acquisition:</strong> 6 thermistors with 2 × AD7799 ADCs</li>
+<li><strong>Storage:</strong> microSD / FatFs; <strong>timekeeping:</strong> RV-3032 RTC</li>
+<li><strong>Connectivity:</strong> RN4871 BLE; mobile interface via MIT App Inventor</li>
+<li><strong>Tools:</strong> MPLAB X, MCC, C, FreeCAD</li>
+</ul>
+<h2>Outcomes and limitations</h2>
+<ul>
+<li>A stable complete measurement cycle was demonstrated in controlled testing.</li>
+<li>A field test on one tree showed a usable thermal response and approximately <strong>0.001 °C observed noise</strong> under the tested conditions.</li>
+<li>Approximately <strong>17 mA active</strong> and <strong>8.5 µA during sleep</strong> were reported for tested configurations; values depend on setup and hardware.</li>
+<li>Long-duration, multi-site field performance was <strong>not fully validated</strong> within the internship. The project remained an evolving research prototype.</li>
+</ul>
+<h2>Team and acknowledgements</h2>
+<p><strong>Research laboratories:</strong> Laboratoire Ampère and CETHIL.<br/>
+<strong>Industrial/research supervisors:</strong> Laurent Morel (Ampère), Frédéric Lefèvre (CETHIL).<br/>
+<strong>Academic tutor:</strong> Fabien Mieyeville (Polytech Lyon).<br/>
+<strong>Research support:</strong> Ilane Cherif.<br/>
+<strong>Previous contributors acknowledged in the internship report:</strong> Kevin Maillot and Youssouf Fofana.</p>
+<h2>Sources and publication</h2>
+<p>Source: <em>Développement d’une carte d’acquisition et de contrôle d’un capteur de flux de sève</em>, fourth-year internship report, January 2026. The report references internal predecessor reports and component manufacturer datasheets (Microchip, Analog Devices, Micro Crystal). This portfolio description is a summary of that report. <strong>No internal source code, schematics, datasets or full report are published here.</strong> Only personally taken tree-installation photographs may be considered for the public site after final image review.</p>
+<div class="gallery"><img alt="Tree-mounted sap flow prototype during field experimentation" src="../../assets/tree-field.jpg"/></div><p class="source-label">Photo of field setup supplied by the project author.</p><hr/><p class="source-label">Professional project summary. Authors, collaborators and institutions are credited in the text. Code and third-party assets remain with their owners.</p></main></body></html>
