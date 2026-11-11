@@ -1,11 +1,29 @@
-# Portfolio professionnel bilingue — version de validation
+# Soheyb Mebarbeche — Engineering Portfolio
 
-- **Français par défaut** : `index.html` et `projects/*.html`.
-- **English version** : `en/index.html` et `en/projects/*.html`.
-- **Bouton FR / EN** dans la barre de navigation de chaque page.
-- **Portrait professionnel** intégré dans l’accueil.
-- **Diffusion** : copie de travail locale. Aucun document interne du laboratoire n’est inclus.
+Source repository for my bilingual engineering portfolio:
 
-Décompresser l’archive puis ouvrir `index.html` dans un navigateur. Le site est statique et prévu pour GitHub Pages.
+- **Live portfolio:** https://soheybm.github.io/
+- **French:** `index.html`
+- **English:** `en/index.html`
+- **Project pages:** `projects/` and `en/projects/`
+- **Portfolio assets:** `assets/`
 
-Pour publier ultérieurement : créer un nouveau repository nommé **`SoheybM.github.io`** ; préparer une copie publique des fichiers validés ; activer GitHub Pages sur `main` / `(root)`. Sur un compte GitHub gratuit, ce dépôt doit être **public** pour que Pages fonctionne. Il peut rester privé pendant la préparation.
+## GPA671 — Artificial Intelligence
+
+Public portfolio-oriented source extracts for my GPA671 laboratories are organized under:
+
+```
+gpa671/
+├── README.md
+├── requirements.txt
+├── lab-01/
+│   ├── README.md
+│   └── source.py
+└── lab-02/
+    ├── README.md
+    └── source.py
+```
+
+Future laboratories can be added using the same pattern (`lab-03/`, `lab-04/`, …) without changing the site architecture.
+
+The GPA671 public sources intentionally exclude full assignment statements, distributed datasets and course-provided teaching resources. See `gpa671/README.md` for details.
