@@ -25,6 +25,11 @@ A few representative results from the completed notebook:
 
 The laboratory also explored underfitting/overfitting with different `C` and `gamma` values and the numerical-stability advantage of log-probabilities in Naive Bayes.
 
+![RBF SVM hyperparameter comparison](../../assets/gpa671/lab2-rbf-comparison.webp)
+
+![MNIST samples and confusion matrix](../../assets/gpa671/lab2-mnist-results.webp)
+
+
 ## Public source
 
 `source.py` contains the main custom implementations:

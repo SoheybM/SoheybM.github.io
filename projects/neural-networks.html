@@ -1,37 +1,95 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Intelligence artificielle — GPA671 | Soheyb Mebarbeche</title><link href="../styles.css" rel="stylesheet"/><style>.article{max-width:860px;margin:70px auto 110px;padding:0 22px;color:#dce7ec;line-height:1.85}.article h1{font:600 clamp(34px,5vw,56px) 'Space Grotesk',sans-serif;color:white;line-height:1.15}.article h2{font:600 27px 'Space Grotesk',sans-serif;color:white;margin-top:36px}.article h3{font:600 20px 'Space Grotesk',sans-serif;color:white;margin-top:26px}.article a{color:#9eead1;text-decoration:underline}.article ul{padding-left:25px}.article strong{color:white}.article code{background:#203447;padding:3px 5px;border-radius:4px}.source-label{font-size:12px;opacity:.7}.back{display:inline-block;margin-bottom:22px}.results{border-left:3px solid #91e4c4;padding-left:18px;margin:18px 0}</style></head><body><header class="nav"><a class="brand" href="../index.html">SM<span class="dot">.</span></a><nav><a href="../index.html#projects">Projets</a><a href="../index.html#skills">Compétences</a><a href="../index.html#contact">Contact</a></nav><div aria-label="Choix de la langue / Language" class="lang-switch" role="group"><a aria-current="page" class="active" href="#" hreflang="fr" lang="fr">FR</a><a class="inactive" href="../en/projects/neural-networks.html" hreflang="en" lang="en">EN</a></div></header><main class="article"><a class="back" href="../index.html#projects">← Tous les projets</a><h1>Intelligence artificielle — apprentissage et classification</h1><p><strong>GPA671 — Introduction à l’intelligence artificielle | ÉTS Montréal | Automne 2026</strong></p>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Intelligence artificielle — GPA671 | Soheyb Mebarbeche</title>
+<link href="../styles.css" rel="stylesheet"/>
+<style>
+.article{max-width:980px;margin:70px auto 110px;padding:0 22px;color:#dce7ec;line-height:1.8}
+.article h1{font:600 clamp(34px,5vw,56px) 'Space Grotesk',sans-serif;color:white;line-height:1.15;margin-bottom:14px}
+.article h2{font:600 28px 'Space Grotesk',sans-serif;color:white;margin:0 0 14px}
+.article h3{font:600 20px 'Space Grotesk',sans-serif;color:white;margin-top:26px}
+.article a{color:#9eead1;text-decoration:underline}
+.article ul{padding-left:25px}
+.article strong{color:white}
+.article code{background:#203447;padding:3px 5px;border-radius:4px}
+.source-label{font-size:12px;opacity:.72}
+.back{display:inline-block;margin-bottom:22px}
+.intro-copy{max-width:820px;color:#b9c5d0;margin-bottom:34px}
+.lab-card{margin:30px 0;padding:30px;border:1px solid #303b4d;border-radius:14px;background:#111a29}
+.lab-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:10px}
+.lab-number{flex:0 0 auto;color:#91e4c4;font:700 12px 'Space Grotesk',sans-serif;letter-spacing:1.8px;padding-top:8px}
+.lab-title{flex:1}
+.lab-title p{margin:4px 0 0;color:#9eacba}
+.results{border-left:3px solid #91e4c4;padding:4px 0 4px 18px;margin:22px 0;color:#c6d2dc}
+.project-visual{margin:26px 0 10px}
+.project-visual img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid #405167;background:white}
+.project-visual.narrow img{max-width:790px;margin:0 auto}
+.project-visual figcaption{font-size:12px;line-height:1.55;color:#8f9ead;margin-top:9px}
+.source-link{display:inline-flex;margin-top:8px;font-weight:700}
+.future-note{margin:38px 0;padding:22px 24px;border:1px dashed #405167;border-radius:10px;color:#aebac6}
+@media(max-width:620px){.lab-card{padding:20px}.lab-head{display:block}.lab-number{margin-bottom:8px}}
+</style>
+</head>
+<body>
+<header class="nav"><a class="brand" href="../index.html">SM<span class="dot">.</span></a><nav><a href="../index.html#projects">Projets</a><a href="../index.html#skills">Compétences</a><a href="../index.html#contact">Contact</a></nav><div aria-label="Choix de la langue / Language" class="lang-switch" role="group"><a aria-current="page" class="active" href="#" hreflang="fr" lang="fr">FR</a><a class="inactive" href="../en/projects/neural-networks.html" hreflang="en" lang="en">EN</a></div></header>
 
-<h2>Présentation</h2>
-<p>Ce projet regroupe mes travaux pratiques en intelligence artificielle réalisés à l’ÉTS. L’objectif est de documenter progressivement les méthodes implémentées, les expérimentations menées et les résultats obtenus, sans republier les énoncés complets ni les ressources pédagogiques du cours.</p>
+<main class="article">
+<a class="back" href="../index.html#projects">← Tous les projets</a>
+<h1>Intelligence artificielle — apprentissage et classification</h1>
+<p><strong>GPA671 — Introduction à l’intelligence artificielle | ÉTS Montréal | Automne 2026</strong></p>
+<p class="intro-copy">Ce projet regroupe mes travaux pratiques en intelligence artificielle réalisés à l’ÉTS. La page évolue au fil des laboratoires afin de présenter les méthodes implémentées, les expérimentations et quelques résultats représentatifs, sans republier les énoncés complets ni les ressources pédagogiques du cours.</p>
 
-<h2>Labo 1 — Caractéristiques de performance et réseaux de neurones</h2>
+<section class="lab-card">
+<div class="lab-head"><div class="lab-number">LABO 01</div><div class="lab-title"><h2>Réseaux de neurones et frontières de décision</h2><p>Des métriques de performance au perceptron, puis au réseau multicouche.</p></div></div>
 <p>Le premier laboratoire part de l’évaluation de modèles avec les courbes ROC et Precision–Recall, puis construit progressivement un perceptron, une couche de neurones réutilisable et enfin un <strong>réseau multicouche (MLP)</strong>.</p>
 <ul>
-<li>Implémentation d’un perceptron à activation sigmoïde et de la mise à jour des poids.</li>
-<li>Création d’une classe <code>Layer</code> puis d’un MLP avec propagation directe et rétropropagation.</li>
+<li>Perceptron à activation sigmoïde et mise à jour des poids.</li>
+<li>Classe <code>Layer</code> et MLP avec propagation directe et rétropropagation.</li>
 <li>Comparaison de plusieurs architectures et taux d’apprentissage.</li>
-<li>Visualisation d’une <strong>frontière de décision non linéaire</strong>.</li>
+<li>Visualisation d’une frontière de décision non linéaire.</li>
 <li>Fonctions de perte, holdout et validation croisée k-fold.</li>
 </ul>
-<div class="results"><strong>Exemple de résultat :</strong> sur le petit jeu de données du laboratoire, plusieurs configurations atteignent 100 % d’exactitude. Le réseau 2-8-1 avec un taux d’apprentissage de 0,5 atteint ce niveau après 2 777 époques et sert ensuite à visualiser la frontière de décision. Ces valeurs illustrent le comportement du modèle sur un jeu de huit exemples et ne constituent pas une mesure de performance générale.</div>
-<p><a href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671/lab-01" rel="noopener" target="_blank">Voir les sources publiques du labo 1 sur GitHub ↗</a></p>
+<figure class="project-visual narrow">
+<img alt="Frontière de décision non linéaire apprise par un réseau multicouche MLP" loading="lazy" src="../assets/gpa671/lab1-decision-boundary.webp"/>
+<figcaption>Frontière de décision apprise par le MLP sur le petit jeu de données du laboratoire : les zones de fond correspondent aux classes prédites par le réseau.</figcaption>
+</figure>
+<div class="results"><strong>Résultat représentatif :</strong> plusieurs configurations atteignent 100 % d’exactitude sur le jeu de huit exemples. Le réseau 2-8-1 avec un taux d’apprentissage de 0,5 atteint ce niveau après 2 777 époques et sert ensuite à produire la frontière de décision ci-dessus. Ce résultat illustre le comportement du modèle sur ce jeu pédagogique et ne constitue pas une mesure de performance générale.</div>
+<a class="source-link" href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671/lab-01" rel="noopener" target="_blank">Voir les sources publiques du labo 1 sur GitHub ↗</a>
+</section>
 
-<h2>Labo 2 — SVM, k-NN et Naive Bayes</h2>
-<p>Le deuxième laboratoire élargit l’étude à plusieurs méthodes de classification supervisée et à des jeux de données plus importants, avec une attention particulière à la comparaison des modèles, aux hyperparamètres et à la généralisation.</p>
+<section class="lab-card">
+<div class="lab-head"><div class="lab-number">LABO 02</div><div class="lab-title"><h2>SVM, k-NN et Naive Bayes</h2><p>Comparer plusieurs approches de classification et étudier leur généralisation.</p></div></div>
+<p>Le deuxième laboratoire élargit l’étude à plusieurs méthodes de classification supervisée et à des jeux de données plus importants, avec une attention particulière aux hyperparamètres, au sous-apprentissage, au sur-apprentissage et à la normalisation.</p>
 <ul>
-<li>SVM linéaire à marge souple, vecteurs de support et influence du paramètre <code>C</code>.</li>
+<li>SVM linéaire à marge souple, vecteurs de support et influence de <code>C</code>.</li>
 <li>SVM à noyau RBF, noyau gaussien calculé à la main et formulation duale.</li>
 <li>Expérimentations sur CIFAR-10 et MNIST, dont une classification MNIST à 10 classes.</li>
-<li>Implémentation de k-NN avec NumPy, choix de <code>k</code> et étude de la normalisation.</li>
-<li>Implémentation d’un classificateur Gaussian Naive Bayes et étude de sa stabilité numérique.</li>
+<li>k-NN implémenté avec NumPy, choix de <code>k</code> et étude de la normalisation.</li>
+<li>Gaussian Naive Bayes implémenté avec NumPy et étude de sa stabilité numérique.</li>
 </ul>
-<div class="results"><strong>Quelques résultats :</strong> sur le jeu « two moons », le SVM RBF atteint 95,5 % d’exactitude test contre 88,5 % pour le SVM linéaire. Sur MNIST à 10 classes, le SVM RBF atteint 95,2 % contre 91,9 % pour le modèle linéaire. Sur Wine avec k-NN, la normalisation fait passer l’exactitude moyenne de 71,7 % ± 2,7 % à 95,8 % ± 1,4 % sur 20 partitions stratifiées.</div>
-<p><a href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671/lab-02" rel="noopener" target="_blank">Voir les sources publiques du labo 2 sur GitHub ↗</a></p>
 
-<h2>Organisation des sources</h2>
-<p>Les sources publiques sont regroupées dans le dossier <a href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671" rel="noopener" target="_blank"><code>gpa671/</code></a>. Chaque laboratoire possède son propre README et un fichier source contenant les principales implémentations. Les prochains laboratoires pourront être ajoutés avec la même structure (<code>lab-03/</code>, <code>lab-04/</code>, etc.).</p>
+<figure class="project-visual">
+<img alt="Comparaison de trois réglages SVM RBF montrant sous-apprentissage, meilleur compromis et sur-apprentissage" loading="lazy" src="../assets/gpa671/lab2-rbf-comparison.webp"/>
+<figcaption>Influence de <code>C</code> et <code>γ</code> sur un SVM RBF : sous-apprentissage, réglage retenu et sur-apprentissage. Les points entourés correspondent aux vecteurs de support.</figcaption>
+</figure>
+
+<figure class="project-visual narrow">
+<img alt="Exemples de chiffres MNIST et matrice de confusion normalisée d'un SVM RBF à dix classes" loading="lazy" src="../assets/gpa671/lab2-mnist-results.webp"/>
+<figcaption>Classification MNIST à 10 classes : exemples du jeu de chiffres et matrice de confusion normalisée obtenue avec le SVM RBF.</figcaption>
+</figure>
+
+<div class="results"><strong>Quelques résultats :</strong> sur le jeu « two moons », le SVM RBF atteint 95,5 % d’exactitude test contre 88,5 % pour le SVM linéaire. Sur MNIST à 10 classes, le SVM RBF atteint 95,2 % contre 91,9 % pour le modèle linéaire. Sur Wine avec k-NN, la normalisation fait passer l’exactitude moyenne de 71,7 % ± 2,7 % à 95,8 % ± 1,4 % sur 20 partitions stratifiées.</div>
+<a class="source-link" href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671/lab-02" rel="noopener" target="_blank">Voir les sources publiques du labo 2 sur GitHub ↗</a>
+</section>
+
+<div class="future-note"><strong>Structure évolutive :</strong> les prochains laboratoires seront ajoutés sur cette même page et dans le dossier <a href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671" rel="noopener" target="_blank"><code>gpa671/</code></a>, avec la même organisation (<code>lab-03/</code>, <code>lab-04/</code>, etc.).</div>
 
 <h2>Crédits pédagogiques</h2>
 <p><strong>Enseignant :</strong> Mohamad Forouzanfar.<br/><strong>Chargé de laboratoire :</strong> Aymen Daoud.<br/><strong>Établissement :</strong> ÉTS Montréal, GPA671, automne 2026.</p>
-<p>Les énoncés, jeux de données distribués et supports pédagogiques ne sont pas republiés. Les fichiers publics présentent uniquement une sélection de mes implémentations et résultats, avec mention de l’existence éventuelle de code de démarrage fourni dans le cadre du cours.</p>
-<hr/><p class="source-label">Projet académique documenté pour le portfolio. Les résultats présentés correspondent aux notebooks réalisés dans le cadre du cours GPA671.</p></main></body></html>
+<p>Les énoncés, jeux de données distribués et supports pédagogiques ne sont pas republiés. Les fichiers publics présentent une sélection de mes implémentations et résultats, avec mention de l’existence éventuelle de code de démarrage fourni dans le cadre du cours.</p>
+<hr/><p class="source-label">Projet académique documenté pour le portfolio. Les résultats et visuels présentés proviennent des notebooks réalisés dans le cadre du cours GPA671.</p>
+</main>
+</body>
+</html>
