@@ -28,6 +28,9 @@ Several MLP configurations were compared on the small laboratory dataset:
 
 The 2-8-1 network with a learning rate of 0.5 was then used to visualize a **nonlinear decision boundary**.
 
+![MLP decision boundary](../../assets/gpa671/lab1-decision-boundary.webp)
+
+
 These figures come from a toy dataset with only eight examples and are presented to illustrate learning behaviour, not as a general performance claim.
 
 ## Public source
