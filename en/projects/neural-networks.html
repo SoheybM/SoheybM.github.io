@@ -1,16 +1,37 @@
 <!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Artificial Intelligence — GPA671 | Soheyb Mebarbeche</title><link href="../../styles.css" rel="stylesheet"/><style>.article{max-width:860px;margin:70px auto 110px;padding:0 22px;color:#dce7ec;line-height:1.85}.article h1{font:600 clamp(34px,5vw,56px) 'Space Grotesk',sans-serif;color:white;line-height:1.15}.article h2{font:600 27px 'Space Grotesk',sans-serif;color:white;margin-top:36px}.article h3{font:600 20px 'Space Grotesk',sans-serif;color:white;margin-top:26px}.article a{color:#9eead1;text-decoration:underline}.article ul{padding-left:25px}.article strong{color:white}.article code{background:#203447;padding:3px 5px;border-radius:4px}.source-label{font-size:12px;opacity:.7}.back{display:inline-block;margin-bottom:22px}.results{border-left:3px solid #91e4c4;padding-left:18px;margin:18px 0}</style></head><body><header class="nav"><a class="brand" href="../index.html">SM<span class="dot">.</span></a><nav><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></nav><div aria-label="Choix de la langue / Language" class="lang-switch" role="group"><a class="inactive" href="../../projects/neural-networks.html" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="active" href="#" hreflang="en" lang="en">EN</a></div></header><main class="article"><a class="back" href="../index.html#projects">← All projects</a><h1>Artificial Intelligence — Learning &amp; Classification</h1><p><strong>GPA671 — Introduction to Artificial Intelligence | ÉTS Montréal | Fall 2026</strong></p>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Neural Networks | Soheyb Mebarbeche</title><link href="../../styles.css" rel="stylesheet"/><style>.article{max-width:860px;margin:70px auto 110px;padding:0 22px;color:#dce7ec;line-height:1.85}.article h1{font:600 clamp(34px,5vw,56px) 'Space Grotesk',sans-serif;color:white;line-height:1.15}.article h2{font:600 27px 'Space Grotesk',sans-serif;color:white;margin-top:36px}.article a{color:#9eead1;text-decoration:underline}.article ul{padding-left:25px}.article strong{color:white}.article code{background:#203447;padding:3px 5px;border-radius:4px}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin:30px 0}.gallery img{width:100%;height:230px;object-fit:cover;border-radius:9px;border:1px solid #46566a}.source-label{font-size:12px;opacity:.7}.back{display:inline-block;margin-bottom:22px}</style></head><body><header class="nav"><a class="brand" href="../index.html">SM<span class="dot">.</span></a><nav><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></nav><div aria-label="Choix de la langue / Language" class="lang-switch" role="group"><a class="inactive" href="../../projects/neural-networks.html" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="active" href="#" hreflang="en" lang="en">EN</a></div></header><main class="article"><a class="back" href="../index.html#projects">← All projects</a><h1>Neural Networks — Learning and Classification Experiments</h1>
-<p><strong>GPA671 — Introduction to Artificial Intelligence | ÉTS Montréal | Fall 2026</strong></p>
 <h2>Overview</h2>
-<p>A developing collection of practical learning experiments with artificial neurons, perceptrons and multilayer perceptrons (MLPs). Exercises include classification, experiments with different architectures and hyperparameters, and visualizations of nonlinear decision boundaries.</p>
-<h2>Scope and contributions</h2>
-<p>Work on algorithm implementation, learning behavior, the role of iteration/batches and model evaluation, with Python as the main programming language. This portfolio focuses on <strong>demonstrable implementations and experimental insights</strong>, not a full publication of graded coursework or teaching materials.</p>
-<h2>Evidence and next steps</h2>
-<p>A bilingual LinkedIn post describes MLP experiments and decision-boundary visualization. The original Python sources and experiment outputs still need to be reviewed before publishing technical claims, numerical results or code.</p>
+<p>This project brings together my practical AI coursework at ÉTS. It is designed as an evolving portfolio of implementations, experiments and measured results without republishing full graded assignments or course resources.</p>
+
+<h2>Lab 1 — Performance metrics and neural networks</h2>
+<p>The first laboratory starts with model evaluation through ROC and Precision–Recall curves, then progressively builds a perceptron, a reusable neural-network layer and finally a <strong>multilayer perceptron (MLP)</strong>.</p>
+<ul>
+<li>Sigmoid perceptron and gradient-based weight updates.</li>
+<li>Reusable <code>Layer</code> abstraction and MLP forward/backward propagation.</li>
+<li>Comparison of architectures and learning rates.</li>
+<li>Visualization of a <strong>nonlinear decision boundary</strong>.</li>
+<li>Loss functions, holdout and k-fold validation utilities.</li>
+</ul>
+<div class="results"><strong>Example result:</strong> on the small laboratory dataset, several configurations reached 100% accuracy. The 2-8-1 network with a 0.5 learning rate reached this level after 2,777 epochs and was then used to visualize the decision boundary. These values illustrate behaviour on an eight-sample toy dataset and are not a general performance claim.</div>
+<p><a href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671/lab-01" rel="noopener" target="_blank">View Lab 1 public sources on GitHub ↗</a></p>
+
+<h2>Lab 2 — SVM, k-NN and Naive Bayes</h2>
+<p>The second laboratory expands the work to several supervised-classification methods and larger datasets, with particular attention to model comparison, hyperparameters and generalization.</p>
+<ul>
+<li>Soft-margin linear SVM, support vectors and the effect of <code>C</code>.</li>
+<li>RBF SVM, a manually implemented Gaussian kernel and the dual decision function.</li>
+<li>CIFAR-10 and MNIST experiments, including 10-class MNIST classification.</li>
+<li>NumPy implementation of k-NN, selection of <code>k</code> and feature normalization.</li>
+<li>Gaussian Naive Bayes implementation and numerical-stability experiments.</li>
+</ul>
+<div class="results"><strong>Selected results:</strong> on the two-moons dataset, the RBF SVM reached 95.5% test accuracy versus 88.5% for the linear SVM. On 10-class MNIST, the RBF SVM reached 95.2% versus 91.9% for the linear model. On Wine with k-NN, normalization improved mean accuracy from 71.7% ± 2.7% to 95.8% ± 1.4% across 20 stratified splits.</div>
+<p><a href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671/lab-02" rel="noopener" target="_blank">View Lab 2 public sources on GitHub ↗</a></p>
+
+<h2>Source organization</h2>
+<p>Public sources are grouped in the <a href="https://github.com/SoheybM/SoheybM.github.io/tree/main/gpa671" rel="noopener" target="_blank"><code>gpa671/</code></a> directory. Each laboratory has its own README and source file. Future work can follow the same structure (<code>lab-03/</code>, <code>lab-04/</code>, etc.) without changing the portfolio architecture.</p>
+
 <h2>Academic attribution</h2>
-<p><strong>Course instructor:</strong> Mohamad Forouzanfar.<br/>
-<strong>Laboratory instructor:</strong> Aymen Daoud.<br/>
-<strong>Institution:</strong> École de technologie supérieure (ÉTS Montréal), GPA671, Fall 2026.</p>
-<p>Academic lecture slides and assignments remain the property of their respective authors; they will not be reposted wholesale.</p>
-<hr/><p class="source-label">Professional project summary. Authors, collaborators and institutions are credited in the text. Code and third-party assets remain with their owners.</p></main></body></html>
+<p><strong>Course instructor:</strong> Mohamad Forouzanfar.<br/><strong>Laboratory instructor:</strong> Aymen Daoud.<br/><strong>Institution:</strong> École de technologie supérieure (ÉTS Montréal), GPA671, Fall 2026.</p>
+<p>Assignment statements, distributed datasets and teaching materials are not republished. The public files contain a selected set of my implementations and results, while acknowledging that some starter scaffolding may have been supplied as part of the course.</p>
+<hr/><p class="source-label">Academic project summary for portfolio use. Reported results come from the GPA671 laboratory notebooks.</p></main></body></html>
